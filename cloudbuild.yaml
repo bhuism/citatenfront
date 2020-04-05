@@ -1,13 +1,12 @@
 #build and deploy
 steps:
-  - name: alpine
-    args: ['env']
   - name: node
     entrypoint: npm
     args: ['install']
   - name: node
     entrypoint: npm
-    env: ['COMMIT_SHA']
+    options:
+      env: ['COMMIT_SHA']
     args: ['run', 'build']
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 'eu.gcr.io/badge-260212/citatenfront', '.']
