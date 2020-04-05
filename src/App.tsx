@@ -1,6 +1,7 @@
 import React from 'react';
 import {Button, ButtonGroup, ButtonToolbar, Container, Jumbotron, Row} from "react-bootstrap";
 import ForkMe from "./components/ForkMe";
+import Badge from "./components/Badge";
 import './App.css'
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
 
             <main>
                 <Container>
-                    <Row >
+                    <Row>
                         <ButtonToolbar>
                             <ButtonGroup className="mr-2">
                                 <Button variant={"primary"} size={"lg"} href={'#'}>Citaten »</Button>
@@ -38,15 +39,7 @@ function App() {
             </main>
 
             <footer className="footer">
-                <div className="container">
-                    <span className="text-muted">©2019 <a className={'footerLink'}
-                                                          href="http://www.appsource.nl">Appsource</a>
-                    </span> - <a
-                    href="https://github.com/bhuism/citaten/commit/71a29129d2b43426344fba3398b824bbc7971a9a">
-                    <img alt="Latest badge"
-                         src="https://badge.odee.net/github/sha/bhuism/citaten/master/71a29129d2b43426344fba3398b824bbc7971a9a/badge.svg"/>
-                </a>
-                </div>
+                <Badge user={'bhuism'} repo={'citatenfront'} ghash={process.env.REACT_APP_GIT_SHA}/>
             </footer>
 
         </>
