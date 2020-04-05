@@ -1,5 +1,5 @@
 import React from 'react';
-import './ForkMe.scss'
+import './ForkMe.css'
 
 interface Props {
     user: string,
