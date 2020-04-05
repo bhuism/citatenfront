@@ -1,6 +1,4 @@
 #build and deploy
-
-
 steps:
   - name: node
     entrypoint: npm
