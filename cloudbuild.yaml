@@ -1,7 +1,7 @@
 #build and deploy
 steps:
   - name: alpine
-    args: ['/bin/sh', 'set']
+    args: ['env']
   - name: node
     entrypoint: npm
     args: ['install']
