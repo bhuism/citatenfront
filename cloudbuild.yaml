@@ -8,7 +8,7 @@ steps:
   - name: node
     entrypoint: npm
     env:
-      - 'COMMIT_SHA=$COMMIT_SHA'
+      - 'REACT_APP_COMMIT_SHA=$COMMIT_SHA'
     args: ['run', 'build']
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 'eu.gcr.io/badge-260212/citatenfront', '.']
