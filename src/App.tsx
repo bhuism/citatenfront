@@ -38,7 +38,7 @@ function App() {
                 </Container>
             </main>
 
-            <footer className="footer">
+            <footer>
                 <Badge user={'bhuism'} repo={'citatenfront'} ghash={process.env.REACT_APP_COMMIT_SHA}/>
             </footer>
 
