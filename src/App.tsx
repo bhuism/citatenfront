@@ -2,6 +2,7 @@ import React from 'react';
 import {Button, ButtonGroup, ButtonToolbar, Container, Jumbotron, Row} from "react-bootstrap";
 import ForkMe from "./components/ForkMe";
 import Badge from "./components/Badge";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 
 function App() {
