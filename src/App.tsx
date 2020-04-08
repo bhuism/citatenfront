@@ -26,13 +26,13 @@ function App() {
                     <Row>
                         <ButtonToolbar>
                             <ButtonGroup className="mr-2">
-                                <Button variant={"primary"} size={"lg"} href={'#'}>Citaten »</Button>
+                                <Button variant={"primary"} size={"lg"} href={'https://api.citaten.odee.net/citaten'}>Citaten »</Button>
                             </ButtonGroup>
                             <ButtonGroup className="mr-2">
-                                <Button variant={"primary"} size={"lg"} href={'#'}>Sprekers »</Button>
+                                <Button variant={"primary"} size={"lg"} href={'https://api.citaten.odee.net/sprekers'}>Sprekers »</Button>
                             </ButtonGroup>
                             <ButtonGroup className="mr-2">
-                                <Button variant={"primary"} size={"lg"} href={'#'}>Categories »</Button>
+                                <Button variant={"primary"} size={"lg"} href={'https://api.citaten.odee.net/categorien'}>Categories »</Button>
                             </ButtonGroup>
                         </ButtonToolbar>
                     </Row>
