@@ -8,11 +8,11 @@ steps:
     env:
       - 'REACT_APP_COMMIT_SHA=$COMMIT_SHA'
     args: ['run', 'build']
-  - name: gcr.io/cloud-builders/gsutil
-    args: ["-m", "rsync", "-r", "-c", "-d", "./build", "gs://citaten.odee.net"]
-#  - name: 'gcr.io/cloud-builders/docker'
-#    args: ['build', '-t', 'eu.gcr.io/badge-260212/citatenfront', '.']
-#  - name: 'gcr.io/cloud-builders/docker'
-#    args: ['push', 'eu.gcr.io/$PROJECT_ID/citatenfront']
-#  - name: 'gcr.io/cloud-builders/gcloud'
-#    args: ['run', 'deploy', 'citatenfront', '--image', 'eu.gcr.io/badge-260212/citatenfront:latest', '--region', 'europe-west4', '--platform', 'managed', '--concurrency', '80', '--max-instances', '10', '--memory', '128Mi', '--timeout', '30s', '--allow-unauthenticated', '--async']
+#  - name: gcr.io/cloud-builders/gsutil
+#    args: ["-m", "rsync", "-r", "-c", "-d", "./build", "gs://citaten.odee.net"]
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'eu.gcr.io/badge-260212/citatenfront', '.']
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'eu.gcr.io/$PROJECT_ID/citatenfront']
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args: ['run', 'deploy', 'citatenfront', '--image', 'eu.gcr.io/badge-260212/citatenfront:latest', '--region', 'europe-west4', '--platform', 'managed', '--concurrency', '80', '--max-instances', '10', '--memory', '128Mi', '--timeout', '30s', '--allow-unauthenticated', '--async']
