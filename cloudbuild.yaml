@@ -8,6 +8,8 @@ steps:
     env:
       - 'REACT_APP_COMMIT_SHA=$COMMIT_SHA'
     args: ['run', 'build']
+#  - name: gcr.io/cloud-builders/gsutil
+#    args: ["-m", "rsync", "-r", "-c", "-d", "./build", "gs://citaten.odee.net"]
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 'eu.gcr.io/badge-260212/citatenfront', '.']
   - name: 'gcr.io/cloud-builders/docker'
