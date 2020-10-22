@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button, ButtonGroup, ButtonToolbar, Col, Container, Jumbotron, Row} from "react-bootstrap";
+import {Container, Jumbotron, Row} from "react-bootstrap";
 import ForkMe from "./components/ForkMe";
 import Badge from "./components/Badge";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -25,31 +25,7 @@ function App() {
 
             <main>
                 <Container>
-                    <Row>
-                        <Col>
-                            <ButtonToolbar>
-                                <ButtonGroup className="mr-2">
-                                    <Button variant={"primary"} size={"lg"}
-                                            href={'https://api.citaten.odee.net/citaten'}>Citaten
-                                        »</Button>
-                                </ButtonGroup>
-                                <ButtonGroup className="mr-2">
-                                    <Button variant={"primary"} size={"lg"}
-                                            href={'https://api.citaten.odee.net/sprekers'}>Sprekers
-                                        »</Button>
-                                </ButtonGroup>
-                                <ButtonGroup className="mr-2">
-                                    <Button variant={"primary"} size={"lg"}
-                                            href={'https://api.citaten.odee.net/categorien'}>Categories »</Button>
-                                </ButtonGroup>
-                            </ButtonToolbar>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col>
-                            <SwaggerUI url="https://api.citaten.odee.net/openapi.yml"/>
-                        </Col>
-                    </Row>
+                    <SwaggerUI url="https://api.citaten.odee.net/openapi.yml"/>
                 </Container>
             </main>
 
