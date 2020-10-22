@@ -42,7 +42,7 @@ function App() {
                         </ButtonToolbar>
                     </Row>
                     <Row>
-                        <SwaggerUI url="https://petstore.swagger.io/v2/swagger.json"/>
+                        <SwaggerUI url="https://api.citaten.odee.net/openapi.yml"/>
                     </Row>
                 </Container>
             </main>
