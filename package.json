@@ -9,7 +9,7 @@
     "@types/jest": "26.0.15",
     "@types/node": "12.12.35",
     "@types/react": "16.9.53",
-    "@types/react-dom": "16.9.8",
+    "@types/react-dom": "16.9.9",
     "@types/swagger-ui-react": "3.23.3",
     "bootstrap": "4.5.3",
     "node-sass": "4.14.1",
